@@ -1,0 +1,379 @@
+/*
+  ========================================
+  Style Reset START
+  ========================================
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*
+  ========================================
+  Style Reset END
+  ========================================
+
+  ========================================
+  START CSS CODING . . . BEGIN!
+  ========================================
+
+  ========================================
+  GRID
+  ========================================
+*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*
+  ========================================
+  BASE (Colors, Fonts, Backgrounds)
+  ========================================
+*/
+/* For big lettering ->font-family: 'Noto Sans TC', sans-serif;
+for the paragraphs --> font-family: 'Roboto', sans-serif;*/
+html{
+  font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5, h6, button, li, .name{
+  font-family: 'Noto Sans TC', sans-serif;
+  font-variant: all-small-caps;
+  font-weight: 500;
+  font-size: 4rem;
+  letter-spacing: -0.05rem;
+  word-spacing: 0.2rem;
+  line-height: 2;
+}
+p, span, address{
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  line-height: 2;
+  margin-bottom: 3rem;
+}
+
+.why, footer span,footer p, footer address{
+  margin-bottom: 0;
+}
+
+h1{
+  font-size: 8rem;
+}
+
+header p{
+  font-size: 2.5rem;
+}
+
+h2{
+  font-size: 6rem;
+}
+
+li, footer, nav li{
+  font-size: 2rem;
+}
+
+
+header, footer{
+  background: #66768a;
+  color: white;
+  box-shadow: inset 0 -42px 72px -42px rgba(75,88,105,1);
+}
+
+.subSection, .midSection{
+  background: white;
+  color: #353d47;
+}
+
+.midSection{
+  background: #dbdfe2;
+  box-shadow: inset 0 -42px 72px -42px rgba(75,88,105,1);
+}
+
+footer{
+  background: #161f2a;
+  box-shadow: inset 0 -42px 72px -42px rgba(0,0,0,1);
+}
+
+.linkTitle{
+  color: #4b5869;
+  line-height: 1rem;
+}
+
+.contactInfo .email{
+  font-weight: 500;
+}
+  /*
+  ========================================
+  LAYOUT (Sizing and Layout of Main Elements)
+  ========================================
+*/
+body *{
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+header ul, .links, .contactInfo, .disclaimer p, .visit, .logo{
+  float: left
+}
+
+.donate, .contactInfo, .disclaimer .logo, .donate{
+  float: right;
+}
+
+.introduction{
+  clear: both;
+  text-align: center;
+}
+
+.subSection{
+  padding: 10% 30%;
+  text-align: center;
+}
+
+li{
+  display:inline-block;
+}
+
+li:first-child{
+  padding-right: 2rem;
+}
+.socialMedia li{
+  padding-right: 1rem;
+}
+
+.navTop, footer{
+  padding: 3% 5%;
+  margin: 0 auto;
+}
+
+.introduction, .midSection{
+  padding: 10% 15%;
+  height: auto;
+  text-align: center;
+  contain: content;
+}
+
+.introduction{
+  padding-top: 5%;
+}
+
+footer{
+  contain: content;
+}
+
+footer ul, .name{
+  padding-bottom: 2rem;
+}
+
+.empty{
+  height: 400px;
+  width: 85%;
+  padding: 0 20%;
+  margin: 0 auto;
+  background:  #66768a;
+}
+
+.fix{
+  width:75%;
+  padding: 0 48%;
+}
+/*
+  ========================================
+  MODULE (specific styles targeting individual parts of the page, such as navigation or feature styles)
+  ========================================
+*/
+
+.links, .contactInfo{
+  width: 300px;
+  text-align: left;
+}
+
+.links{
+  width: 170px;
+}
+
+.contactInfo span, address, .light{
+  display: block;
+  line-height: normal;
+  font-weight: 100;
+}
+
+.disclaimer{
+  clear: both;
+  border-top: 1px solid white;
+  padding-top: 2rem;
+}
+
+
+.visit{
+  width: 50%;
+  padding: .5%;
+}
+
+.standardButton{
+  border: 1px solid black;
+  border-radius: 3px;
+  background: none;
+  max-width: 150px;
+  min-width: 150px;
+  padding: 1.3% 0 2.2% 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.donate{
+  padding: .1% 1% .5% 1%;
+  background: white;
+  color: gray;
+  font-size: 2rem;
+  border: none;
+  border-radius: 3px;
+}
+
+.logo{
+  height: 50px;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.social{
+  height:40px;
+  width: 40px;
+  padding: 0;
+}
+
+.socialMedia ul{
+  padding: 0;
+}
+
+.facebook{
+  height: 45px;
+  width: 45x;
+}
+
+.name{
+  font-size: 3rem;
+  line-height: 2.5rem;
+  padding-right: 5%;
+}
+
+
+.contactInfo *, p{
+  padding-bottom: 1rem;
+}
+
+/*
+  ========================================
+  STATE (styles are then used to augment or override other styles in the event that a module includes an alternate state)
+  ========================================
+*/
+
+a:link, a:visited{
+  text-decoration: none;
+  color: inherit;
+}
+a:hover{
+  color: #dbdfe2;
+  transition: 0.3s;
+}
+
+.donate:hover{
+  background: #dbdfe2;
+  color: #353d47;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.light:hover{
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.05s;
+}
+
+.standardButton:hover{
+  background: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+button:active,
+button:focus,
+input,
+input:active,
+input:focus {
+    outline: 0;
+    outline-style:none;
+    outline-width:0;
+}  
+/*
+  ========================================
+  MEDIA QUERIES
+  ========================================
+*/
+@media (max-width: 900px){
+  html{
+    font-size: 43.75%;
+  }
+  .subSection{
+    padding: 5% 7%;
+  }
+  h1{
+    line-height: 80px;
+  }
+  .empty{
+    height: 200px;
+  }
+  
+  footer .logo{
+    float: right;
+  }
+}
+
+@media(mix-width: 550px){
+  
+}
